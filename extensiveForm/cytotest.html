@@ -1,0 +1,64 @@
+<html>
+
+	<head>
+		<title>Sequential Games</title>
+
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+
+		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+		<script src="http://cytoscape.github.io/cytoscape.js/api/cytoscape.js-latest/cytoscape.min.js"></script>
+
+		<script src="https://cdn.rawgit.com/cpettitt/dagre/v0.7.4/dist/dagre.min.js"></script>
+		<script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-dagre/1.1.2/cytoscape-dagre.js"></script>
+
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+		<style>
+			body {
+				font-family: helvetica;
+				font-size: 14px;
+			}
+
+			#cy {
+				width: 100%;
+				height: 90%;
+				position: relative;
+				left: 0;
+				top: 0;
+				
+			}
+
+			h1 {
+				opacity: 0.5;
+				font-size: 2em;
+				padding: 0.5em;
+				z-index: -1;
+			}
+		</style>
+
+
+		<script src = "cyto.js"></script>
+	</head>
+
+	<body>
+		<div id = "choose">
+			Number of strategies: <br>
+			<input type = 'radio' name = 'strats' value = 2>2</input>
+			<input type = 'radio' name = 'strats' value = 3>3</input>
+			<input type = 'radio' name = 'strats' value = 4>4</input>
+
+			<br>Number of Players: <br>
+			<input type = 'radio' name = 'players' value = 2>2</input>
+			<input type = 'radio' name = 'players' value = 3>3</input>
+			<input type = 'radio' name = 'players' value = 4>4</input>
+
+		</div>
+
+
+		<h1><center>Sequential Games</center></h1>
+		<div id="cy"></div>
+
+	</body>
+
+</html>
